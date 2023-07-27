@@ -64,6 +64,7 @@
             </div>
         </nav>
         <!-- banner section -->
+        
         <div class="carousel w-full rounded-xl ">
             <!-- slide1 -->
             <div id="slide1" class="carousel-item relative w-full">
@@ -135,7 +136,7 @@
             </div>
            
           </div>
-          <div class="relative -mt-24 ml-80  flex justify-center items-center bg-white rounded-lg shadow w-[746px] p-10 ml-20 hidden md:flex">
+          <div class="relative -mt-24 ml-72  flex justify-center items-center bg-white rounded-lg shadow w-[746px] p-10 hidden md:flex">
             <img src="images/fruit1.png" alt="">
             <img src="images/fruit2.png" alt="">
             <img src="images/fruit3.png" alt="">
@@ -148,7 +149,7 @@
 
        <!-- deal section -->
        <section class="my-20 w-full">
-       <div class="flex flex-col lg:flex-row justify-between">
+       <div class="flex flex-col ml-7 lg:flex-row justify-between">
         <div>
             <h3 class="text-4xl font-bold">Deal of the day</h3>
             <p class="text-[#585858]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -190,7 +191,7 @@
         
        </div>
        <!-- cards -->
-       <div class="  grid grid-cols-1  lg:grid-cols-4 gap-5 ">
+       <div class=" ml-7 grid grid-cols-1  lg:grid-cols-4 gap-5 ">
        <!-- card 1 -->
        <div class="card w-80 bg-base-100 shadow-xl mt-7 ">
         <figure class="px-10 pt-10">
@@ -405,14 +406,14 @@
             <div class="hero rounded-xl" style="background-image: url(./images/team.png);">
                 <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
                 <div class=" text-center text-neutral-content">
-                  <div class="max-w-md">
+                  <div class=" order-1 max-w-md">
                     <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
                     <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old..</p>
                 
                 </div>
               </div>
               <div class=" grid grid-cols-1 lg:flex mt-96 justify-between gap-20 mb-10">
-                <div>
+                <div class="order-2">
                     <img class="w-[140px] h-[140px] rounded-full" src="images/member1.png" />
                     <h3 class="text-center text-white text-2xl font-bold">Awlad Hossain</h3>
                     <p class="text-center text-white text-base font-medium">Fruits Expert</p>
@@ -420,7 +421,7 @@
                         <i class="fa-brands fa-twitter rounded-full bg-rose-500"></i>
                         <i class="fa-brands fa-linkedin  bg-rose-500"></i></span>
                 </div>
-                <div>
+                <div class="order-3">
                     <img class="w-[140px] h-[140px] rounded-full" src="images/member2.png" />
                     <h3 class="text-center text-white text-2xl font-bold">Saifa Chowdhury</h3>
                     <p class="text-center text-white text-base font-medium">Fruits Expert</p>
@@ -428,7 +429,7 @@
                         <i class="fa-brands fa-twitter rounded-full bg-rose-500"></i>
                         <i class="fa-brands fa-linkedin  bg-rose-500"></i></span>
                 </div>
-                <div>
+                <div class="order-4">
                     <img class="w-[140px] h-[140px] rounded-full" src="images/member3.png" />
                     <h3 class="text-center text-white text-2xl font-bold">Rokib Hossain</h3>
                     <p class="text-center text-white text-base font-medium">Fruits Expert</p>
@@ -449,53 +450,70 @@
            
         </section>
         <!-- Choose us section -->
-        <section class="lg:my-28 ">
+        <section class="  lg:my-28 ">
           <h2  class="text-center text-neutral-900 text-5xl font-extrabold mb-5">Why Choose Us</h2>
           <p class=" text-center text-neutral-900 text-opacity-60  font-medium mb-12 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-          <div class="flex justify-center gap-10">
+          <div class="grid grid-cols-1 lg:flex justify-center gap-10">
          <div>
-         <span class="flex my-4"> <img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/group 1.svg" alt="">
+         <span class="grid-cols-1 lg:flex items-start gap-3 "><div class="flex my-4">
+           <img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/group 1.svg" alt=""></div>
+         <div>
           <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
-        </span>
         <div class="w-24 h-px border border-neutral-900 border-opacity-80"></div>
-        <p class="lg:mb-12">Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-         
-         <span class="flex my-4"> <img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/love 1.svg" alt="">
+        <p class="lg:mb-12">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+         </div>
+      </span>
+         <span class=" my-4 grid-cols-1 lg:flex items-start gap-3"> 
+          <div><img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/love 1.svg" alt=""></div>
+          <div>
           <h3 class="text-2xl font-extrabold">Fresh is Best</h3>
-        </span>
         <div class="w-24 h-px border border-neutral-900 border-opacity-80"></div>
-        <p class="lg:mb-12">Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-         <span class="flex my-4"> <img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/gift-box 1.svg" alt="">
+        <p class="lg:mb-12">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+      </div>
+      </span>
+         <span class="flex my-4 grid-cols-1 lg:flex items-start gap-3">
+         <div>
+          <img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/gift-box 1.svg" alt="">
+         </div>
+         <div>
           <h3 class="text-2xl font-extrabold">Gift Certificates</h3>
-        </span>
         <div class="w-24 h-px border border-neutral-900 border-opacity-80"></div>
-        <p class="lg:mb-12">Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+        <p class="lg:mb-12">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+      </div>
+      </span>
          </div>
          <div>
           <img src="images/whychoose1.png" alt="">
          </div>
          <div>
-         <span class="flex my-4 gap-6">
-          <h3 class=" text-right text-2xl font-extrabold " >Integrated Supplier</h3>
-          <img class="w-10 bg-neutral-900 bg-opacity-10 rounded-full "  src="images/fruit 1.svg" alt="">
-         </span>
-        
+          <span class="grid-cols-1 lg:flex items-start gap-3 ">
+            <div >
+           <h3 class="text-2xl font-extrabold lg:text-right">Integrated Supplier</h3>
+         <div class="w-24 h-px border border-neutral-900 border-opacity-80 flex items-center"></div>
+         <p class="lg:mb-12 lg:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          <div class="flex justify-center order-1 lg:flex my-4">
+            <img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/fruit 1.svg" alt=""></div>
+       </span>
+          <span class=" my-4 grid-cols-1 lg:flex items-start gap-3"> 
+           
+           <div>
+           <h3 class="text-2xl font-extrabold lg:text-right">Sustainable Practice</h3>
          <div class="w-24 h-px border border-neutral-900 border-opacity-80"></div>
-         <p class="lg:mb-12 text-right">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-         
-         
-         <span class="flex my-4 gap-6">
-          <h3  class=" text-right text-2xl font-extrabold ">  Sustainable Practice</h3>
-          <img class="w-10 bg-neutral-900 bg-opacity-10 rounded-full " src="images/ice-cream 1.svg" alt="">
-         </span>
+         <p class="lg:mb-12 lg:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+       </div>
+       <div><img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/ice-cream 1.svg" alt=""></div>
+       </span>
+          <span class="flex my-4 grid-cols-1 lg:flex items-start gap-3">
+          <div>
+           <h3 class="text-2xl font-extrabold lg:text-right">The Benefits Only</h3>
          <div class="w-24 h-px border border-neutral-900 border-opacity-80"></div>
-         <p class="lg:mb-12 text-right">Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
-         <span class="flex my-4 gap-6">
-          <h3 class=" text-right text-2xl font-extrabold ">The Benefits Only</h3>
-          <img class="w-10 bg-neutral-900 bg-opacity-10 rounded-full "  src="images/like 1.svg" alt="">
-         </span>
-         <div class="w-24 h-px border border-neutral-900 border-opacity-80"></div>
-         <p class="lg:mb-12 text-right">Professional employees are there for you to pick <br>the most amazing and fresh fruits.</p>
+         <p class="lg:mb-12 lg:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+       </div>
+       <div>
+        <img  class="w-10 bg-neutral-900 bg-opacity-10 rounded-full" src="images/like 1.svg" alt="">
+       </div>
+       </span>
          </div>
         </div>
         </section>
@@ -506,7 +524,7 @@
           <img src="images/logo.png" alt="">
         <a class="text-5xl text-white">Fruit Burst</a>
       </div>
-        <div class="grid grid-flow-col gap-4">
+        <div class="grid grid-cols-3 lg:grid-flow-col gap-4">
           <a class="link link-hover text-lg font-semibold text-white">Home</a> 
           <a class="link link-hover text-lg font-semibold text-white">About us</a> 
           <a class="link link-hover text-lg font-semibold text-white">shop</a> 
