@@ -14,14 +14,20 @@
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
+
+
+
+
+
+
      </style>
 </head>
 <body class="font-lato overflow-x-hidden">
     <header class="container mx-auto">
         <!-- nav-bar -->
         <nav class=" lg:my-12">
-            <div class="navbar bg-[#F85559] rounded-full ">
-            <ul class="flex gap-5 justify-center text-white mr-44 ml-4">
+            <div class="hidden md:flex navbar bg-[#F85559] rounded-full   ">
+            <ul class=" gap-5 justify-center text-white mr-44 ml-4">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Shop</a></li>
@@ -32,17 +38,33 @@
                     <img src="images/logo.png" alt="">
                   <a class="text-5xl text-white">Fruit Burst</a>
                 </div>
-                <div class="lg:flex-none gap-2 hidden sm:block">
+                <div class="hidden md:flex flex-none gap-2 ">
                   <div class= "w-2/3 flex justify-end items-center relative">
                     <input type="text" placeholder="Search " class="input input-bordered rounded-full w-24 md:w-auto" />
                    <i class="fa-solid  fa-magnifying-glass absolute mr-2 w-10 text-gray-500"></i>
                 
                   </div>
                 </div>
+                <!-- for mobile -->
               </div>
+              <div class="block md:hidden flex justify-around items-center ">
+              <div class="flex justify-center items-center  gap-2">
+                <img src="images/logo.png" alt="">
+              <a class="text-3xl text-black">Fruit Burst</a>
+            </div>
+              <div class="  dropdown dropdown-bottom dropdown-end ">
+                <label tabindex="0" class=""><i class="fa-solid fa-bars "></i></label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <!-- banner section -->
-        <div class="carousel w-full rounded-xl">
+        <div class="carousel w-full rounded-xl ">
             <!-- slide1 -->
             <div id="slide1" class="carousel-item relative w-full">
                 <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
@@ -111,20 +133,22 @@
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
+           
           </div>
-          <div class="flex justify-center items-center bg-white rounded-lg shadow w-[746px] p-10 ml-20 hidden sm:inline-flex">
+          <div class="relative -mt-24 ml-80  flex justify-center items-center bg-white rounded-lg shadow w-[746px] p-10 ml-20 hidden md:flex">
             <img src="images/fruit1.png" alt="">
             <img src="images/fruit2.png" alt="">
             <img src="images/fruit3.png" alt="">
             <img src="images/fruit4.png" alt="">
             <img src="images/fruit5.png" alt="">
           </div>
+          
     </header>
     <main class="container mx-auto">
 
        <!-- deal section -->
        <section class="my-20 w-full">
-       <div class="flex justify-between">
+       <div class="flex flex-col lg:flex-row justify-between">
         <div>
             <h3 class="text-4xl font-bold">Deal of the day</h3>
             <p class="text-[#585858]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -132,25 +156,30 @@
         <div>
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                 <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
+                  <span class="countdown font-mono text-5xl flex justify-center items-center">
                     <span style="--value:15;"></span>
+                    <i class="fa-solid fa-ellipsis-vertical text-3xl text-center "></i>
                   </span>
+                 
                   days
                 </div> 
                 <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
+                  <span class="countdown font-mono text-5xl flex justify-center items-center">
                     <span style="--value:10;"></span>
+                    <i class="fa-solid fa-ellipsis-vertical text-3xl text-center "></i>
+                    
                   </span>
                   hours
                 </div> 
                 <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
+                  <span class="countdown font-mono text-5xl flex justify-center items-center">
                     <span style="--value:24;"></span>
+                    <i class="fa-solid fa-ellipsis-vertical text-3xl text-center "></i>
                   </span>
                   min
                 </div> 
                 <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
+                  <span class="countdown font-mono text-5xl flex justify-center items-center">
                     <span style="--value:15;"></span>
                   </span>
                   sec
